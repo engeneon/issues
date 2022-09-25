@@ -1,0 +1,440 @@
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.adf.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.adf.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.cassandra.cosmos.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.cassandra.cosmos.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.azure-devices.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-devices.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.blob.core.windows.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.azurewebsites.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.file.core.windows.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.file.core.windows.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.afs.azure.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.afs.azure.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.documents.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.documents.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.azconfig.io"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azconfig.io/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.web.core.windows.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.web.core.windows.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.agentsvc.azure-automation.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.agentsvc.azure-automation.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.api.azureml.ms"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.api.azureml.ms/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.sql.azuresynapse.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.sql.azuresynapse.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.service.signalr.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.service.signalr.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.oms.opinsights.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.oms.opinsights.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.table.core.windows.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.table.core.windows.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.vaultcore.azure.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.mongo.cosmos.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.mongo.cosmos.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.search.windows.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.search.windows.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.table.cosmos.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.table.cosmos.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.mariadb.database.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.mariadb.database.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.cognitiveservices.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.cognitiveservices.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.eastasia.azmk8s.io"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.eastasia.azmk8s.io/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.eventgrid.azure.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.eventgrid.azure.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.redis.cache.windows.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.redis.cache.windows.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.azure-automation.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-automation.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.servicebus.windows.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.servicebus.windows.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.dfs.core.windows.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.dfs.core.windows.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.datafactory.azure.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.datafactory.azure.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.gremlin.cosmos.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.gremlin.cosmos.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.postgres.database.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.postgres.database.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.monitor.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.monitor.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.ea.backup.windowsazure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.ea.backup.windowsazure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.siterecovery.windowsazure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.siterecovery.windowsazure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.database.windows.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.database.windows.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.notebooks.azure.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.notebooks.azure.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.ods.opinsights.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.ods.opinsights.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.queue.core.windows.net"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.queue.core.windows.net/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.azurecr.io"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mcreating/updating Virtual Network Link (Subscription: "yyyyyy-31a8-4859-832f-894fb9ab7831"
+[31m│[0m [0mResource Group Name: "engeneon-dns"
+[31m│[0m [0mPrivate Zone Name: "privatelink.mysql.database.azure.com"
+[31m│[0m [0mVirtual Network Link Name: "xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"): polling after CreateOrUpdate: Code="BadRequest" Message="Virtual network resource not found for '/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia'"[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with module.enterprise_scale.azurerm_private_dns_zone_virtual_network_link.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.mysql.database.azure.com/virtualNetworkLinks/xxxxx-4192-436a-8068-d294f693d8d3-2aeef76d-d359-5fa7-9694-cb1f2d2f9a12"],
+[31m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 482, in resource "azurerm_private_dns_zone_virtual_network_link" "connectivity":
+[31m│[0m [0m 482: resource "azurerm_private_dns_zone_virtual_network_link" "connectivity" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m

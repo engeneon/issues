@@ -1,0 +1,1268 @@
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [31m-[0m destroy
+[0m
+Terraform will perform the following actions:
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.adf.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.adf.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.adf.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.adf.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.adf.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.afs.azure.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.afs.azure.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.afs.azure.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.afs.azure.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.afs.azure.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.agentsvc.azure-automation.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.agentsvc.azure-automation.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.agentsvc.azure-automation.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.agentsvc.azure-automation.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.agentsvc.azure-automation.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.api.azureml.ms"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.api.azureml.ms"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.api.azureml.ms" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.api.azureml.ms" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.api.azureml.ms." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azconfig.io"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azconfig.io"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azconfig.io" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.azconfig.io" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.azconfig.io." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-automation.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-automation.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-automation.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.azure-automation.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.azure-automation.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-devices.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-devices.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-devices.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.azure-devices.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.azure-devices.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.azurecr.io" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.azurecr.io." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.azurewebsites.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.azurewebsites.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.blob.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.blob.core.windows.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.cassandra.cosmos.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.cassandra.cosmos.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.cassandra.cosmos.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.cassandra.cosmos.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.cassandra.cosmos.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.cognitiveservices.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.cognitiveservices.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.cognitiveservices.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.cognitiveservices.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.cognitiveservices.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.database.windows.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.database.windows.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.database.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.database.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.database.windows.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.datafactory.azure.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.datafactory.azure.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.datafactory.azure.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.datafactory.azure.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.datafactory.azure.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.dfs.core.windows.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.dfs.core.windows.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.dfs.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.dfs.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.dfs.core.windows.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.documents.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.documents.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.documents.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.documents.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.documents.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.ea.backup.windowsazure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.ea.backup.windowsazure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.ea.backup.windowsazure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.ea.backup.windowsazure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.ea.backup.windowsazure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.eastasia.azmk8s.io"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.eastasia.azmk8s.io"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.eastasia.azmk8s.io" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.eastasia.azmk8s.io" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.eastasia.azmk8s.io." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.eventgrid.azure.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.eventgrid.azure.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.eventgrid.azure.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.eventgrid.azure.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.eventgrid.azure.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.file.core.windows.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.file.core.windows.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.file.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.file.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.file.core.windows.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.gremlin.cosmos.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.gremlin.cosmos.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.gremlin.cosmos.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.gremlin.cosmos.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.gremlin.cosmos.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.mariadb.database.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.mariadb.database.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.mariadb.database.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.mariadb.database.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.mariadb.database.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.mongo.cosmos.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.mongo.cosmos.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.mongo.cosmos.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.mongo.cosmos.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.mongo.cosmos.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.monitor.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.monitor.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.monitor.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.monitor.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.monitor.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.mysql.database.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.mysql.database.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.mysql.database.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.mysql.database.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.mysql.database.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.notebooks.azure.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.notebooks.azure.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.notebooks.azure.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.notebooks.azure.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.notebooks.azure.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.ods.opinsights.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.ods.opinsights.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.ods.opinsights.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.ods.opinsights.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.ods.opinsights.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.oms.opinsights.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.oms.opinsights.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.oms.opinsights.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.oms.opinsights.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.oms.opinsights.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.postgres.database.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.postgres.database.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.postgres.database.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.postgres.database.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.postgres.database.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.queue.core.windows.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.queue.core.windows.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.queue.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.queue.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.queue.core.windows.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.redis.cache.windows.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.redis.cache.windows.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.redis.cache.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.redis.cache.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.redis.cache.windows.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.search.windows.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.search.windows.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.search.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.search.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.search.windows.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.service.signalr.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.service.signalr.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.service.signalr.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.service.signalr.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.service.signalr.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.servicebus.windows.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.servicebus.windows.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.servicebus.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.servicebus.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.servicebus.windows.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.siterecovery.windowsazure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.siterecovery.windowsazure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.siterecovery.windowsazure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.siterecovery.windowsazure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.siterecovery.windowsazure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.sql.azuresynapse.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.sql.azuresynapse.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.sql.azuresynapse.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.sql.azuresynapse.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.sql.azuresynapse.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.table.core.windows.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.table.core.windows.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.table.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.table.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.table.core.windows.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.table.cosmos.azure.com"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.table.cosmos.azure.com"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.table.cosmos.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.table.cosmos.azure.com" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.table.cosmos.azure.com." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.vaultcore.azure.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.vaultcore.azure.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_private_dns_zone.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.web.core.windows.net"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.web.core.windows.net"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                                                    = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns/providers/Microsoft.Network/privateDnsZones/privatelink.web.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_record_sets[0m[0m                             = 25000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links[0m[0m                   = 1000 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mmax_number_of_virtual_network_links_with_registration[0m[0m = 100 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                                  = "privatelink.web.core.windows.net" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mnumber_of_record_sets[0m[0m                                 = 1 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                                   = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                                                  = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+
+      [31m-[0m [0msoa_record {
+          [31m-[0m [0m[1m[0memail[0m[0m         = "azureprivatedns-host.microsoft.com" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mexpire_time[0m[0m   = 2419200 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mfqdn[0m[0m          = "privatelink.web.core.windows.net." [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mhost_name[0m[0m     = "azureprivatedns.net" [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mminimum_ttl[0m[0m   = 10 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mrefresh_time[0m[0m  = 3600 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mretry_time[0m[0m    = 300 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mserial_number[0m[0m = 1 [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mtags[0m[0m          = {} [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mttl[0m[0m           = 3600 [90m->[0m [0m[90mnull[0m[0m
+        }
+    }
+
+[1m  # module.enterprise_scale.azurerm_resource_group.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_resource_group" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m       = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-connectivity-eastasia" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mlocation[0m[0m = "eastasia" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m     = "engeneon-connectivity-eastasia" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m     = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+    }
+
+[1m  # module.enterprise_scale.azurerm_resource_group.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-dns"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_resource_group" "connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m       = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mlocation[0m[0m = "eastasia" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m     = "engeneon-dns" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m     = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+    }
+
+[1m  # module.enterprise_scale.azurerm_subnet.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia/subnets/AzureFirewallSubnet"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia/subnets/AzureFirewallSubnet"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_subnet" "connectivity" {
+      [31m-[0m [0m[1m[0maddress_prefixes[0m[0m                               = [
+          [31m-[0m [0m"10.100.0.0/24",
+        ] [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0menforce_private_link_endpoint_network_policies[0m[0m = false [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0menforce_private_link_service_network_policies[0m[0m  = false [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mid[0m[0m                                             = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia/subnets/AzureFirewallSubnet" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                           = "AzureFirewallSubnet" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mprivate_endpoint_network_policies_enabled[0m[0m      = true [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mprivate_link_service_network_policies_enabled[0m[0m  = true [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                            = "engeneon-connectivity-eastasia" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mservice_endpoint_policy_ids[0m[0m                    = [] [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mservice_endpoints[0m[0m                              = [] [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mvirtual_network_name[0m[0m                           = "engeneon-hub-eastasia" [90m->[0m [0m[90mnull[0m[0m
+    }
+
+[1m  # module.enterprise_scale.azurerm_subnet.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia/subnets/GatewaySubnet"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia/subnets/GatewaySubnet"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_subnet" "connectivity" {
+      [31m-[0m [0m[1m[0maddress_prefixes[0m[0m                               = [
+          [31m-[0m [0m"10.100.1.0/24",
+        ] [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0menforce_private_link_endpoint_network_policies[0m[0m = false [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0menforce_private_link_service_network_policies[0m[0m  = false [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mid[0m[0m                                             = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia/subnets/GatewaySubnet" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                                           = "GatewaySubnet" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mprivate_endpoint_network_policies_enabled[0m[0m      = true [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mprivate_link_service_network_policies_enabled[0m[0m  = true [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m                            = "engeneon-connectivity-eastasia" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mservice_endpoint_policy_ids[0m[0m                    = [] [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mservice_endpoints[0m[0m                              = [] [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mvirtual_network_name[0m[0m                           = "engeneon-hub-eastasia" [90m->[0m [0m[90mnull[0m[0m
+    }
+
+[1m  # module.enterprise_scale.azurerm_subscription_template_deployment.telemetry_connectivity[0][0m will be [1m[31mdestroyed[0m
+  # (because index [0] is out of range for count)[0m
+[0m  [31m-[0m[0m resource "azurerm_subscription_template_deployment" "telemetry_connectivity" {
+      [31m-[0m [0m[1m[0mid[0m[0m                 = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/providers/Microsoft.Resources/deployments/pid-97603aac-98f8-4a55-92fc-4c78378c9ba5_v2.3.1_000b_049c8f16" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mlocation[0m[0m           = "eastasia" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m               = "pid-97603aac-98f8-4a55-92fc-4c78378c9ba5_v2.3.1_000b_049c8f16" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0moutput_content[0m[0m     = jsonencode(
+            {
+              [31m-[0m [0mtelemetry = {
+                  [31m-[0m [0mtype  = "String"
+                  [31m-[0m [0mvalue = "For more information, see https://aka.ms/alz/tf/telemetry"
+                }
+            }
+        ) [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mparameters_content[0m[0m = jsonencode({}) [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m               = {} [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtemplate_content[0m[0m   = jsonencode(
+            {
+              [31m-[0m [0m"$schema"      = "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#"
+              [31m-[0m [0mcontentVersion = "1.0.0.0"
+              [31m-[0m [0moutputs        = {
+                  [31m-[0m [0mtelemetry = {
+                      [31m-[0m [0mtype  = "String"
+                      [31m-[0m [0mvalue = "For more information, see https://aka.ms/alz/tf/telemetry"
+                    }
+                }
+              [31m-[0m [0mparameters     = {}
+              [31m-[0m [0mresources      = []
+              [31m-[0m [0mvariables      = {}
+            }
+        ) [90m->[0m [0m[90mnull[0m[0m
+    }
+
+[1m  # module.enterprise_scale.azurerm_virtual_network.connectivity["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia"][0m will be [1m[31mdestroyed[0m
+  # (because key ["/subscriptions/xxxxx-4192-436a-8068-d294f693d8d3/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia"] is not in for_each map)[0m
+[0m  [31m-[0m[0m resource "azurerm_virtual_network" "connectivity" {
+      [31m-[0m [0m[1m[0maddress_space[0m[0m           = [
+          [31m-[0m [0m"10.100.0.0/16",
+        ] [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mdns_servers[0m[0m             = [] [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mflow_timeout_in_minutes[0m[0m = 0 [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mguid[0m[0m                    = "zzzzzzzz-bb94f78b5b46" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mid[0m[0m                      = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mlocation[0m[0m                = "eastasia" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mname[0m[0m                    = "engeneon-hub-eastasia" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mresource_group_name[0m[0m     = "engeneon-connectivity-eastasia" [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0msubnet[0m[0m                  = [
+          [31m-[0m [0m{
+              [31m-[0m [0maddress_prefix = "10.100.0.0/24"
+              [31m-[0m [0mid             = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia/subnets/AzureFirewallSubnet"
+              [31m-[0m [0mname           = "AzureFirewallSubnet"
+              [31m-[0m [0msecurity_group = ""
+            },
+          [31m-[0m [0m{
+              [31m-[0m [0maddress_prefix = "10.100.1.0/24"
+              [31m-[0m [0mid             = "/subscriptions/yyyyyy-31a8-4859-832f-894fb9ab7831/resourceGroups/engeneon-connectivity-eastasia/providers/Microsoft.Network/virtualNetworks/engeneon-hub-eastasia/subnets/GatewaySubnet"
+              [31m-[0m [0mname           = "GatewaySubnet"
+              [31m-[0m [0msecurity_group = ""
+            },
+        ] [90m->[0m [0m[90mnull[0m[0m
+      [31m-[0m [0m[1m[0mtags[0m[0m                    = {
+          [31m-[0m [0m"deployedBy" = "terraform/azure/caf-enterprise-scale"
+        } [90m->[0m [0m[90mnull[0m[0m
+    }
+
+[0m[1mPlan:[0m 0 to add, 0 to change, 46 to destroy.
+[0m[33m╷[0m[0m
+[33m│[0m [0m[1m[33mWarning: [0m[0m[1mArgument is deprecated[0m
+[33m│[0m [0m
+[33m│[0m [0m[0m  with module.enterprise_scale.azurerm_subnet.connectivity,
+[33m│[0m [0m  on .terraform/modules/enterprise_scale/resources.connectivity.tf line 58, in resource "azurerm_subnet" "connectivity":
+[33m│[0m [0m  58:   enforce_private_link_endpoint_network_policies = [4meach.value.template.enforce_private_link_endpoint_network_policies[0m[0m
+[33m│[0m [0m
+[33m│[0m [0m`enforce_private_link_endpoint_network_policies` will be removed in favour of the property `private_endpoint_network_policies_enabled` in version 4.0 of the AzureRM Provider
+[33m│[0m [0m
+[33m│[0m [0m(and one more similar warning elsewhere)
+[33m╵[0m[0m
+[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Saved the plan to: terraform.plan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "terraform.plan"
