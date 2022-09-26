@@ -20,7 +20,7 @@ module "enterprise_scale" {
 
   default_location = "eastasia"
 
-  deploy_management_resources = true
+  deploy_management_resources = false 
   deploy_connectivity_resources = true
 
   subscription_id_management  = data.azurerm_client_config.core.subscription_id
